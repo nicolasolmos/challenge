@@ -1,0 +1,13 @@
+.show-card {
+    display: flex;
+    
+    &-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-image {
+        width: 50%;
+        align-self: flex-end;
+    }
+}
