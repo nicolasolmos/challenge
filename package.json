@@ -4,7 +4,8 @@
   "description": "A front-end challenge",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --inspect-brk node_modules/.bin/jest --runInBand",
+    "test-watch": "jest -w"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/nicolasolmos/challenge#readme",
   "dependencies": {
+    "axios": "^0.24.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "sass": "^1.43.4",
@@ -31,5 +33,8 @@
   },
   "devDependencies": {
     "jest": "^27.3.1"
+  },
+  "jest": {
+    "verbose": true
   }
 }
