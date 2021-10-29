@@ -5,4 +5,16 @@
     flex-direction: column;
     align-content: space-around;
     align-items: flex-start;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        align-items: flex-start;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: 30px auto auto auto;
+    }
 }
+
+
