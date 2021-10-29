@@ -1,6 +1,6 @@
 const React = require('react');
 const { render, fireEvent, screen } = require('@testing-library/react');
-const ListingView = require('../listing.view');
+const ListingView = require('../listingView/listing.view');
 const userEvent = require('@testing-library/user-event').default;
 
 
