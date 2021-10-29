@@ -1,10 +1,13 @@
-const { BrowserRouter } = require("react-router-dom");
+require("regenerator-runtime/runtime");
+const React = require('react');
+const ReactDOM = require('react-dom');
+const { HashRouter, Route, Switch } = require("react-router-dom");
 const ShowView = require("./views/show.view");
-const ListingView = require("./views/shows.view");
+const ListingView = require("./views/listing.view");
 
 const App = props => {
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Switch>
                 <Route path="/shows">
                     <ListingView />
@@ -13,8 +16,8 @@ const App = props => {
                     <ShowView />
                 </Route>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     )
 };
 
-ReactDOM.render(<App />, document.getElementsById('challenge-app'));
+ReactDOM.render(<App />, document.getElementById('challenge-app'));
