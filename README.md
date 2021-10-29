@@ -31,3 +31,7 @@ and then connect to `http://localhost:8080/shows`
 ### Tests 
 
 > npm run test
+
+### Notes
+
+1. The scafolding of this project was configured manually in order to avoid use out-of-the-box solutions.
