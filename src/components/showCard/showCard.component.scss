@@ -9,6 +9,11 @@
     align-content: stretch;
     justify-content: space-between;
     align-items: stretch;
+
+    @media screen and (min-width: 1024px) {
+        max-width: 300px;
+
+    }
     
     &__info {
         display: flex;
@@ -16,6 +21,13 @@
         align-self: flex-start;
         margin-left: 10px;
         padding-bottom: 10px;
+
+
+        @media screen and (min-width: 1024px) {
+            max-height: 20em;
+            text-overflow: ellipsis;
+    
+        }
     }
 
     &__image {
@@ -29,4 +41,9 @@
         font-weight: bold;
         font-size: 1.5em;
     }
+
+    &__summary {
+        overflow-y: auto;
+    }
+
 }

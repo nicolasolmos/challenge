@@ -23,7 +23,7 @@ const ShowCard = props => {
         <section className="show-card" onClick={handleClick}>
             <div className="show-card__info">
                 <p className="show-card__name">{props.show.name}</p>
-                <span dangerouslySetInnerHTML={dangerousHTMLInjection} />
+                <span className="show-card__summary" dangerouslySetInnerHTML={dangerousHTMLInjection} />
                 <GenresPills genres={props.show.genres} />
             </div>    
             {imageElement}
