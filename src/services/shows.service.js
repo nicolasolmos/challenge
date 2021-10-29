@@ -4,14 +4,15 @@ const axios = require('axios').default;
 class ShowsService {
     static async getShows(paramSearchString) {
         try {
+
+            if (!paramSearchString) throw new Error('invalid parameter provided: ' + paramSearchString);
+
             const response = await axios.get(constants.API_URL, {
                 params: { q: paramSearchString }
             });
-            debugger;
-            console.log('HOLA', constants.API_URL);
+            
             return response.data;
         } catch (error) {
-            console.log('HOLA', error)
             return null;
         }
     }
