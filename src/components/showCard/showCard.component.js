@@ -14,7 +14,7 @@ const ShowCard = props => {
     return (
         <section className="show-card">
             <div className="show-card__info">
-                <p>{props.show.name}</p>
+                <p className="show-card__name">{props.show.name}</p>
                 <GenresPills genres={props.show.genres} />
             </div>    
             {imageElement}
