@@ -7,15 +7,15 @@
 
 ### Stack
 
-React
-Jest
-ReactDOM
-React Testing Library
-SASS
-Webpack and Webpack Plugins
-Babel and Babel Presets
-Axios
-Node
+- React
+- Jest
+- ReactDOM
+- React Testing Library
+- SASS
+- Webpack and Webpack Plugins
+- Babel and Babel Presets
+- Axios
+- Node
 
 ### Installation
 
