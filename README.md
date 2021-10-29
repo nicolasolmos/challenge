@@ -20,7 +20,7 @@ Node
 ### Installation
 
 > git clone http://github.com/nicolasolmos/challenge
-> npm install
+>  && npm install
 
 ### Run
 
