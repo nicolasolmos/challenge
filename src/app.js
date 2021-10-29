@@ -10,15 +10,11 @@ const App = props => {
     return (
         <HashRouter>
             <Switch>
-                <Route path="/shows">
-                    <ListingView />
-                </Route>
-                <Route path="/show">
-                    <ShowView />
-                </Route>
+                <Route path="/shows" component={ListingView} />
+                <Route path="/show/:id" component={ShowView} />
             </Switch>
         </HashRouter>
-    )
+    );
 };
 
 ReactDOM.render(<App />, document.getElementById('challenge-app'));
