@@ -15,8 +15,12 @@ const ShowCard = props => {
         __html: props.show.summary,
     };
 
+    const handleClick = () => {
+      props.onClick(props.show.id);
+    };
+
     return (
-        <section className="show-card">
+        <section className="show-card" onClick={handleClick}>
             <div className="show-card__info">
                 <p className="show-card__name">{props.show.name}</p>
                 <span dangerouslySetInnerHTML={dangerousHTMLInjection} />

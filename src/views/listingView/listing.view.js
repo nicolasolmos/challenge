@@ -22,6 +22,12 @@ const ListingView = props => {
         setShowStates({ ...showsState, lookup: true });
     };
 
+    const goToShowPage = paramId => {
+        console.log(paramId)
+
+        props.history.push(`/show/${paramId}`);
+    };
+
     useEffect(() => {
         if (showsState.lookup) {
             setShowStates({ ...showsState, lookup: false });
@@ -41,7 +47,7 @@ const ListingView = props => {
     let showCards;
 
     if(showsState.shows.length > 0) {
-        showCards = showsState.shows.map(show => <ShowCard key={show.show.id} show={show.show} />);
+        showCards = showsState.shows.map(show => <ShowCard key={show.show.id} show={show.show} onClick={goToShowPage} />);
     }
 
     return (

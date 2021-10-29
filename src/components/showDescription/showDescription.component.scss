@@ -1,0 +1,28 @@
+.show-description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__image {
+        width: 75%;
+        box-shadow: 0 10px 43px -7px rgba(0,0,0,0.62);
+    }
+
+    &__info {
+        margin: 20px;
+    }
+
+    &__name {
+        font-weight: bold;
+        font-size: x-large;
+    }
+
+    &__metadata-item {
+        font-size: small;
+        font-weight: lighter;
+        margin-right: 10px;
+    }
+}
