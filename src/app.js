@@ -1,9 +1,10 @@
+require('./styles.scss');
 require("regenerator-runtime/runtime");
 const React = require('react');
 const ReactDOM = require('react-dom');
 const { HashRouter, Route, Switch } = require("react-router-dom");
 const ShowView = require("./views/show.view");
-const ListingView = require("./views/listing.view");
+const ListingView = require("./views/listingView/listing.view");
 
 const App = props => {
     return (

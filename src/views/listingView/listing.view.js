@@ -1,7 +1,8 @@
+require('./listing.view.scss');
 const React = require('react');
 const { useState, useEffect } = require('react');
 const ShowCard = require('../../components/showCard/showCard.component');
-const ShowsService = require('../shows.service');
+const ShowsService = require('../../services/shows.service');
 
 const ListingView = props => {
     const initialState = {
