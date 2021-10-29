@@ -1,14 +1,23 @@
+require('./showCard.component.scss');
 const React = require('react');
 const GenresPills = require('../GenresPills/genresPills.component');
-//<img className="show-card__image" src={props.image.original} />
+
 
 const ShowCard = props => {
+
+    let imageElement;
+
+    if (props.show.image) {
+        imageElement =  <img className="show-card__image" src={props.show.image.original} />;
+    }
+
     return (
-        <section>
+        <section className="show-card">
             <div className="show-card__info">
                 <p>{props.show.name}</p>
                 <GenresPills genres={props.show.genres} />
             </div>    
+            {imageElement}
         </section>
     );
 };
