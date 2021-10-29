@@ -1,3 +1,4 @@
+require('./genresPills.component.scss');
 const React = require('react');
 
 const GenresPills = props => {
@@ -8,7 +9,7 @@ const GenresPills = props => {
     return (
         <div className="genres-pills">
             {props.genres.map(genre => {
-                return <span data-testid="genre-pill">{genre}</span>
+                return <span key={genre} className="genres-pills__pill" data-testid="genre-pill">{genre}</span>
             })}
         </div>
     );
