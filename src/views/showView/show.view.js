@@ -1,3 +1,4 @@
+require('./show.view.scss');
 const React = require('react');
 const ShowsService = require('../../services/shows.service');
 const  { useParams } = require('react-router-dom');
@@ -33,7 +34,7 @@ const ShowView = props => {
 
     if (showState.showInfo) {
         return (
-            <section>
+            <section className="show-view">
                 <ShowDescription {...showState.showInfo} />
             </section>
         );

@@ -1,3 +1,4 @@
+require('./showDescription.component.scss');
 const React = require('react');
 
 const ShowDescription = props => {
@@ -13,6 +14,7 @@ const ShowDescription = props => {
 
     return (
         <section className="show-description">
+            {imageElement}
             <div className="show-description__info">
                 <p className="show-description__name">{props.name}</p>
                 <p dangerouslySetInnerHTML={dangerousHTMLInjection} />
@@ -21,8 +23,7 @@ const ShowDescription = props => {
                     <span className="show-description__metadata-item">{props.status}</span>
                     <span className="show-description__metadata-item">{props.type}</span>
                 </div>
-            </div>
-            {imageElement}
+            </div> 
         </section>
     );
 };
