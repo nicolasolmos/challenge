@@ -13,7 +13,7 @@ const ShowDescription = props => {
     }
 
     return (
-        <section className="show-description">
+        <section className="show-description" data-testid="show-description">
             {imageElement}
             <div className="show-description__info">
                 <p className="show-description__name">{props.name}</p>
