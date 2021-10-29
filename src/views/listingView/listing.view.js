@@ -54,7 +54,7 @@ const ListingView = props => {
         <section className="listing-view">
             <header className="listing-view__header">
                 <input data-testid="search-input" type="text" className="listing-view__input" onChange={setSearchString} />
-                <button data-testid="search-button" type="button" onClick={fetchSearchResults}>Buscar!</button>
+                <button data-testid="search-button" type="button" className="listing-view__button" onClick={fetchSearchResults}>Buscar!</button>
             </header>
             <section className="listing-view__list">
                 {showCards}
